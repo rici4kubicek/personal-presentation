@@ -9,7 +9,7 @@ Vue.use(VueMaterial)
 
 Vue.config.productionTip = false
 
-let router = provideRouter()
+const router = provideRouter()
 
 new Vue({
   router,

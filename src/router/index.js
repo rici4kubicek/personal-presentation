@@ -5,7 +5,7 @@ import HelloWorld from "@/pages/HelloWorld";
 
 Vue.use(Router);
 
-export function createRouter() {
+function createRouter() {
   return new Router({
     mode: "history",
     routes: [
@@ -31,7 +31,7 @@ export function createRouter() {
   });
 }
 
-let router = createRouter();
+const router = createRouter();
 
 // This callback runs before every route change, including on page load.
 router.beforeEach((to, from, next) => {
