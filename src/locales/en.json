@@ -4,5 +4,6 @@
   "menu.home": "Home",
   "message": "hello i18n !!",
   "language.czech": "Czech",
-  "language.english": "English"
+  "language.english": "English",
+  "index.meta.title": "Home Page"
 }

@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import HelloWorld from "@/pages/HelloWorld";
+import Index from "@/pages/Index"
 
 Vue.use(Router);
 
@@ -11,10 +11,10 @@ function createRouter() {
     routes: [
       {
         path: "/",
-        name: "HelloWorld",
-        component: HelloWorld,
+        name: "Index",
+        component: Index,
         meta: {
-          title: "Home Page - Richard Kubíček",
+          title: "index.meta.title",
           metaTags: [
             {
               name: "description",
@@ -79,6 +79,13 @@ router.beforeEach((to, from, next) => {
 
   next();
 });
+
+import i18n from '../i18n'
+
+router.beforeEach((to, from, next) => {
+  document.title = "" + i18n.t(to.meta.title) + " - Richard Kubíček" // meta.title is keypath of locale messages
+  next()
+})
 
 export default function provideRouter() {
   return router;
