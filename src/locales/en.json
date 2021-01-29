@@ -5,5 +5,9 @@
   "message": "hello i18n !!",
   "language.czech": "Czech",
   "language.english": "English",
-  "index.meta.title": "Home Page"
+  "index.meta.title": "Home Page",
+  "index.title": "Personal presentation",
+  "index.work.header": "What I am doing",
+  "index.work.item1": "Programming of embdeded in C",
+  "index.work.item2": "Programming in Python"
 }

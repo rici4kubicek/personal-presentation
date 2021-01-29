@@ -29,7 +29,7 @@
         <router-view class="view"></router-view>
       </md-app-content>
     </md-app>
-
+    <div class="footer">
     <router-link to="/">
       <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
     </router-link>
@@ -37,6 +37,7 @@
     <router-link to="/">
       <span v-on:click="changeLocale('en')">{{ $t("language.english") }}</span>
     </router-link>
+    </div>
   </div>
 </template>
 
@@ -64,9 +65,16 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4%;
+  color: #2c3e50;
+  text-align: center;
+}
 .md-app {
-  min-height: 350px;
-  border: 1px solid rgba(#000, 0.12);
+  border: 2px solid rgba(#000, 0.12);
 }
 .md-drawer {
   width: 230px;
