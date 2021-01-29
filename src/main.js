@@ -4,6 +4,7 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
 import provideRouter from './router/index.js'
+import i18n from './i18n'
 
 Vue.use(VueMaterial)
 
@@ -13,5 +14,6 @@ let router = provideRouter()
 
 new Vue({
   router,
-  render: h => h(App),
+  i18n,
+  render: h => h(App)
 }).$mount('#app')
