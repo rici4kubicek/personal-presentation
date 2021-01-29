@@ -80,6 +80,6 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-export function provideRouter() {
+export default function provideRouter() {
   return router;
 }

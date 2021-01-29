@@ -3,13 +3,13 @@ import App from './App.vue'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
-import { provideRouter } from './router/index.js'
+import provideRouter from './router/index.js'
 
 Vue.use(VueMaterial)
 
 Vue.config.productionTip = false
 
-const router = provideRouter()
+let router = provideRouter()
 
 new Vue({
   router,
