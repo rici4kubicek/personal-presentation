@@ -2,6 +2,7 @@
   "app.title": "Richard Kubíček",
   "menu.navigation": "Navigation",
   "menu.home": "Home",
+  "menu.contact": "Contacts",
   "message": "hello i18n !!",
   "language.czech": "Czech",
   "language.english": "English",
@@ -9,5 +10,6 @@
   "index.title": "Personal presentation",
   "index.work.header": "What I am doing",
   "index.work.item1": "Programming of embdeded in C",
-  "index.work.item2": "Programming in Python"
+  "index.work.item2": "Programming in Python",
+  "contact.meta.title": "Contacts"
 }

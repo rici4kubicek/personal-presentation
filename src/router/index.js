@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Index from "@/pages/Index"
+import Contact from "@/pages/Contact"
 
 Vue.use(Router);
 
@@ -18,11 +19,29 @@ function createRouter() {
           metaTags: [
             {
               name: "description",
-              content: "Richard Kubíček home page.",
+              content: "Richard Kubíček - home page.",
             },
             {
               property: "og:description",
-              content: "Richard Kubíček home page.",
+              content: "Richard Kubíček - home page.",
+            },
+          ],
+        },
+      },
+      {
+        path: "/contact",
+        name: "Contact",
+        component: Contact,
+        meta: {
+          title: "contact.meta.title",
+          metaTags: [
+            {
+              name: "description",
+              content: "Richard Kubíček - contact page.",
+            },
+            {
+              property: "og:description",
+              content: "Richard Kubíček - contact page.",
             },
           ],
         },

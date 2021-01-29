@@ -20,6 +20,13 @@
               <span class="md-list-item-text">{{ $t("menu.home") }}</span>
             </md-list-item>
           </router-link>
+
+          <router-link to="/contact">
+            <md-list-item>
+              <md-icon>contact_mail</md-icon>
+              <span class="md-list-item-text">{{ $t("menu.contact") }}</span>
+            </md-list-item>
+          </router-link>
         </md-list>
       </md-app-drawer>
 

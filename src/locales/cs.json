@@ -2,6 +2,7 @@
   "app.title": "Richard Kubíček",
   "menu.navigation": "Navigace",
   "menu.home": "Domů",
+  "menu.contact": "Kontakty",
   "message": "ahoj i18n !!",
   "language.czech": "Česky",
   "language.english": "Anglicky",
@@ -9,5 +10,6 @@
   "index.title": "Osobní prezentace",
   "index.work.header": "Čemu se věnuji",
   "index.work.item1": "Programování embdeded zařízení v jazyce C",
-  "index.work.item2": "Programování v jazyce Python"
+  "index.work.item2": "Programování v jazyce Python",
+  "contact.meta.title": "Kontakty"
 }
