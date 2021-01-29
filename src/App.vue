@@ -1,66 +1,41 @@
 <template>
   <div id="app">
-    <md-app>
-      <md-app-toolbar class="md-primary" md-elevation="0">
-        <md-button
-          class="md-icon-button"
-          @click="toggleMenu"
-          v-if="!menuVisible"
-        >
+    <md-app md-mode="reveal">
+      <md-app-toolbar class="md-primary">
+        <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
           <md-icon>menu</md-icon>
         </md-button>
-        <span class="md-title">{{ $t('app.title') }}</span>
+        <span class="md-title">{{ $t("app.title") }}</span>
       </md-app-toolbar>
 
-      <md-app-drawer :md-active.sync="menuVisible" md-persistent="mini">
-        <md-toolbar class="md-transparent" md-elevation="0">
-          <span>{{ $t('menu.navigation') }}</span>
-
-          <div class="md-toolbar-section-end">
-            <md-button class="md-icon-button md-dense" @click="toggleMenu">
-              <md-icon>keyboard_arrow_left</md-icon>
-            </md-button>
-          </div>
-        </md-toolbar>
+      <md-app-drawer :md-active.sync="menuVisible">
+        <md-toolbar class="md-transparent" md-elevation="0">{{
+          $t("menu.navigation")
+        }}</md-toolbar>
 
         <md-list>
-          <md-list-item>
-            <md-icon>home</md-icon>
-            <span class="md-list-item-text">{{ $t('menu.home') }}</span>
-          </md-list-item>
-
-          <md-list-item>
-            <md-icon>send</md-icon>
-            <span class="md-list-item-text">Sent Mail</span>
-          </md-list-item>
-
-          <md-list-item>
-            <md-icon>delete</md-icon>
-            <span class="md-list-item-text">Trash</span>
-          </md-list-item>
-
-          <md-list-item>
-            <md-icon>error</md-icon>
-            <span class="md-list-item-text">Spam</span>
-          </md-list-item>
+          <router-link to="/">
+            <md-list-item>
+              <md-icon>home</md-icon>
+              <span class="md-list-item-text">{{ $t("menu.home") }}</span>
+            </md-list-item>
+          </router-link>
         </md-list>
       </md-app-drawer>
 
       <md-app-content>
         <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <router-view class="view"></router-view>
+        <HelloWorld msg="Welcome to Your Vue.js App" />
+        <router-view class="view"></router-view>
       </md-app-content>
     </md-app>
 
-    
-
     <router-link to="/">
-      <span v-on:click="changeLocale('cs')">{{ $t('language.czech') }}</span>
+      <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
     </router-link>
-      | 
+    |
     <router-link to="/">
-      <span v-on:click="changeLocale('en')">{{ $t('language.english') }}</span>
+      <span v-on:click="changeLocale('en')">{{ $t("language.english") }}</span>
     </router-link>
   </div>
 </template>
@@ -75,9 +50,6 @@ export default {
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
-    },
-    toggleMenu() {
-      this.menuVisible = !this.menuVisible;
     },
   },
 };
