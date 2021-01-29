@@ -1,4 +1,7 @@
 {
+  "app.title": "Richard Kubíček",
+  "menu.navigation": "Navigace",
+  "menu.home": "Domů",
   "message": "ahoj i18n !!",
   "language.czech": "Česky",
   "language.english": "Anglicky"
