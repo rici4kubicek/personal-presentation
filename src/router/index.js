@@ -14,15 +14,15 @@ function createRouter() {
         name: "HelloWorld",
         component: HelloWorld,
         meta: {
-          title: "Home Page - Example App",
+          title: "Home Page - Richard Kubíček",
           metaTags: [
             {
               name: "description",
-              content: "The home page of our example app.",
+              content: "Richard Kubíček home page.",
             },
             {
               property: "og:description",
-              content: "The home page of our example app.",
+              content: "Richard Kubíček home page.",
             },
           ],
         },
