@@ -56,10 +56,11 @@
     
 
     <router-link to="/">
-      <span v-on:click="changeLocale('cs')">CS</span>
+      <span v-on:click="changeLocale('cs')">{{ $t('language.czech') }}</span>
     </router-link>
+      | 
     <router-link to="/">
-      <span v-on:click="changeLocale('en')">EN</span>
+      <span v-on:click="changeLocale('en')">{{ $t('language.english') }}</span>
     </router-link>
   </div>
 </template>

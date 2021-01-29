@@ -1,3 +1,5 @@
 {
-  "message": "ahoj i18n !!"
+  "message": "ahoj i18n !!",
+  "language.czech": "Česky",
+  "language.english": "Anglicky"
 }
