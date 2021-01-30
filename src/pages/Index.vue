@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+    <img alt="Vue logo" src="../assets/logo.png" />
     <h1>{{ $t("index.title") }}</h1>
     <h3>{{ $t("index.work.header") }}</h3>
 

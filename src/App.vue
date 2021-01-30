@@ -31,7 +31,6 @@
       </md-app-drawer>
 
       <md-app-content>
-        <img alt="Vue logo" src="./assets/logo.png" />
         <HelloWorld msg="Welcome to Your Vue.js App" />
         <router-view class="view"></router-view>
       </md-app-content>

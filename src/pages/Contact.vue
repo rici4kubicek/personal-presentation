@@ -1,5 +1,6 @@
 <template>
   <div class="contact">
+    <img alt="Vue logo" src="../assets/face.png" />
     <h1>{{ $t("contact.title") }}</h1>
 
     <md-card md-with-hover>
