@@ -1,20 +1,49 @@
 <template>
-  <div class="index">
-    <h1>{{ $t("index.title") }}</h1>
-    <h3>{{ $t("index.work.header") }}</h3>
-    <div class="md-alignment-center">
-      <md-list>
-        <md-list-item>
-          <md-icon>send</md-icon>
-          <span class="md-list-item-text">{{ $t("index.work.item1") }}</span>
-        </md-list-item>
+  <div class="contact">
+    <h1>{{ $t("contact.title") }}</h1>
 
-        <md-list-item>
-          <md-icon>send</md-icon>
-          <span class="md-list-item-text">{{ $t("index.work.item2") }}</span>
-        </md-list-item>
-      </md-list>
-    </div>
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">GitHub</div>
+          <!--- <div class="md-subhead">It also have a ripple</div> --->
+        </md-card-header>
+
+        <md-card-content
+          ><p>
+            <img
+              alt="GitHub logo"
+              src="../assets/contact/github.png"
+              width="32px"
+            />
+          </p>
+          <a href="https://github.com/rici4kubicek" target="_blank"> github.com/rici4kubicek</a>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">LinkedIn</div>
+          <!--- <div class="md-subhead">It also have a ripple</div> --->
+        </md-card-header>
+
+        <md-card-content
+          ><p>
+            <img
+              alt="LinkedIn logo"
+              src="../assets/contact/linkedin.png"
+              width="32px"
+            />
+          </p>
+          <a
+            href="https://www.linkedin.com/in/richard-kub%C3%AD%C4%8Dek-119635aa/" target="_blank"
+          >
+            LinkedIn bio</a
+          >
+        </md-card-content>
+      </md-ripple>
+    </md-card>
   </div>
 </template>
 
@@ -29,6 +58,13 @@ export default {
 .md-list {
   margin: 15px 0 0;
   text-align: center;
+}
+.md-card {
+  max-width: 500px;
+  min-width: 250px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
 }
 h3 {
   margin: 15px 0 0;

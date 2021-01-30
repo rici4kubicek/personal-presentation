@@ -11,5 +11,6 @@
   "index.work.header": "What I am doing",
   "index.work.item1": "Programming of embdeded in C",
   "index.work.item2": "Programming in Python",
-  "contact.meta.title": "Contacts"
+  "contact.meta.title": "Contacts",
+  "contact.title": "Contacts"
 }

@@ -11,5 +11,6 @@
   "index.work.header": "Čemu se věnuji",
   "index.work.item1": "Programování embdeded v jazyce C",
   "index.work.item2": "Programování v jazyce Python",
-  "contact.meta.title": "Kontakty"
+  "contact.meta.title": "Kontakty",
+  "contact.title": "Kontakty"
 }
