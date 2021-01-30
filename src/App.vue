@@ -74,6 +74,10 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+.md-list-item {
+  padding: 4px;
+  border: 2px solid rgba(#000, 0.12);
+}
 .footer {
   left: 0;
   bottom: 0;
