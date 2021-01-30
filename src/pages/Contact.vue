@@ -5,6 +5,24 @@
     <md-card md-with-hover>
       <md-ripple>
         <md-card-header>
+          <div class="md-title">Email</div>
+          <!--- <div class="md-subhead">It also have a ripple</div> --->
+        </md-card-header>
+
+        <md-card-content
+          ><div @click="onEmailClick()">
+            <p>
+              <md-icon>alternate_email</md-icon>
+            </p>
+            rici.kubicek+web@gmail.com
+          </div>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
           <div class="md-title">GitHub</div>
           <!--- <div class="md-subhead">It also have a ripple</div> --->
         </md-card-header>
@@ -59,6 +77,9 @@ export default {
         "https://www.linkedin.com/in/richard-kub%C3%AD%C4%8Dek-119635aa/",
         "_blank"
       );
+    },
+    onEmailClick() {
+      window.open("mailto:rici.kubicek+web@gmail.com");
     },
   },
 };
