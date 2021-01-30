@@ -10,14 +10,16 @@
         </md-card-header>
 
         <md-card-content
-          ><p>
-            <img
-              alt="GitHub logo"
-              src="../assets/contact/github.png"
-              width="32px"
-            />
-          </p>
-          <a href="https://github.com/rici4kubicek" target="_blank"> github.com/rici4kubicek</a>
+          ><div @click="onGithubClick()">
+            <p>
+              <img
+                alt="GitHub logo"
+                src="../assets/contact/github.png"
+                width="32px"
+              />
+            </p>
+            github.com/rici4kubicek
+          </div>
         </md-card-content>
       </md-ripple>
     </md-card>
@@ -29,18 +31,16 @@
         </md-card-header>
 
         <md-card-content
-          ><p>
-            <img
-              alt="LinkedIn logo"
-              src="../assets/contact/linkedin.png"
-              width="32px"
-            />
-          </p>
-          <a
-            href="https://www.linkedin.com/in/richard-kub%C3%AD%C4%8Dek-119635aa/" target="_blank"
-          >
-            LinkedIn bio</a
-          >
+          ><div @click="onLinkedinClick()">
+            <p>
+              <img
+                alt="LinkedIn logo"
+                src="../assets/contact/linkedin.png"
+                width="32px"
+              />
+            </p>
+            LinkedIn bio
+          </div>
         </md-card-content>
       </md-ripple>
     </md-card>
@@ -50,6 +50,17 @@
 <script>
 export default {
   name: "Contact",
+  methods: {
+    onGithubClick() {
+      window.open("https://github.com/rici4kubicek", "_blank");
+    },
+    onLinkedinClick() {
+      window.open(
+        "https://www.linkedin.com/in/richard-kub%C3%AD%C4%8Dek-119635aa/",
+        "_blank"
+      );
+    },
+  },
 };
 </script>
 
