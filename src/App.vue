@@ -17,14 +17,14 @@
           <router-link to="/">
             <md-list-item>
               <md-icon>home</md-icon>
-              <span class="md-list-item-text">{{ $t("menu.home") }}</span>
+              <span class="md-list-item-text" @click="menuVisible = !menuVisible">{{ $t("menu.home") }}</span>
             </md-list-item>
           </router-link>
 
           <router-link to="/contact">
             <md-list-item>
               <md-icon>contact_mail</md-icon>
-              <span class="md-list-item-text">{{ $t("menu.contact") }}</span>
+              <span class="md-list-item-text"  @click="menuVisible = !menuVisible">{{ $t("menu.contact") }}</span>
             </md-list-item>
           </router-link>
         </md-list>
