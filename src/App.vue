@@ -37,11 +37,11 @@
       </md-app-content>
     </md-app>
     <div class="footer">
-      <router-link to="/">
+      <router-link to="#">
         <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
       </router-link>
       |
-      <router-link to="/">
+      <router-link to="#">
         <span v-on:click="changeLocale('en')">{{
           $t("language.english")
         }}</span>
