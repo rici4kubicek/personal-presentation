@@ -2,19 +2,44 @@
   <div class="index">
     <h1>{{ $t("index.title") }}</h1>
     <h3>{{ $t("index.work.header") }}</h3>
-    <div class="md-alignment-center">
-      <md-list>
-        <md-list-item>
-          <md-icon>send</md-icon>
-          <span class="md-list-item-text">{{ $t("index.work.item1") }}</span>
-        </md-list-item>
 
-        <md-list-item>
-          <md-icon>send</md-icon>
-          <span class="md-list-item-text">{{ $t("index.work.item2") }}</span>
-        </md-list-item>
-      </md-list>
-    </div>
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.work.item1") }}</div>
+          <!--- <div class="md-subhead">It also have a ripple</div> --->
+        </md-card-header>
+
+        <md-card-content>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque
+          ea, nostrum odio. Dolores, sed accusantium quasi non.
+        </md-card-content>
+
+        <md-card-actions>
+          <md-button>Action</md-button>
+          <md-button>Action</md-button>
+        </md-card-actions>
+      </md-ripple>
+    </md-card>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.work.item2") }}</div>
+          <!--- <div class="md-subhead">It also have a ripple</div> --->
+        </md-card-header>
+
+        <md-card-content>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque
+          ea, nostrum odio. Dolores, sed accusantium quasi non.
+        </md-card-content>
+
+        <md-card-actions>
+          <md-button>Action</md-button>
+          <md-button>Action</md-button>
+        </md-card-actions>
+      </md-ripple>
+    </md-card>
   </div>
 </template>
 
@@ -29,6 +54,12 @@ export default {
 .md-list {
   margin: 15px 0 0;
   text-align: center;
+}
+.md-card {
+  max-width: 500px;
+  margin: 40px;
+  display: inline-block;
+  vertical-align: top;
 }
 h3 {
   margin: 15px 0 0;

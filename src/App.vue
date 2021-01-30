@@ -8,7 +8,7 @@
         <span class="md-title">{{ $t("app.title") }}</span>
       </md-app-toolbar>
 
-      <md-app-drawer :md-active.sync="menuVisible">
+      <md-app-drawer :md-active.sync="menuVisible" md-swipeable>
         <md-toolbar class="md-transparent" md-elevation="0">{{
           $t("menu.navigation")
         }}</md-toolbar>
@@ -37,13 +37,15 @@
       </md-app-content>
     </md-app>
     <div class="footer">
-    <router-link to="/">
-      <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
-    </router-link>
-    |
-    <router-link to="/">
-      <span v-on:click="changeLocale('en')">{{ $t("language.english") }}</span>
-    </router-link>
+      <router-link to="/">
+        <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
+      </router-link>
+      |
+      <router-link to="/">
+        <span v-on:click="changeLocale('en')">{{
+          $t("language.english")
+        }}</span>
+      </router-link>
     </div>
   </div>
 </template>
