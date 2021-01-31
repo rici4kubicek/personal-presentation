@@ -1,40 +1,6 @@
 <template>
   <div id="app">
-    <md-app md-mode="reveal">
-      <md-app-toolbar class="md-primary">
-        <md-button class="md-icon-button" @click="menuVisible = !menuVisible">
-          <md-icon>menu</md-icon>
-        </md-button>
-        <span class="md-title">{{ $t("app.title") }}</span>
-      </md-app-toolbar>
-
-      <md-app-drawer :md-active.sync="menuVisible" md-swipeable>
-        <md-toolbar class="md-transparent" md-elevation="0">{{
-          $t("menu.navigation")
-        }}</md-toolbar>
-
-        <md-list>
-          <router-link to="/">
-            <md-list-item>
-              <md-icon>home</md-icon>
-              <span class="md-list-item-text" @click="menuVisible = !menuVisible">{{ $t("menu.home") }}</span>
-            </md-list-item>
-          </router-link>
-
-          <router-link to="/contact">
-            <md-list-item>
-              <md-icon>contact_mail</md-icon>
-              <span class="md-list-item-text"  @click="menuVisible = !menuVisible">{{ $t("menu.contact") }}</span>
-            </md-list-item>
-          </router-link>
-        </md-list>
-      </md-app-drawer>
-
-      <md-app-content>
-        <HelloWorld msg="Welcome to Your Vue.js App" />
         <router-view class="view"></router-view>
-      </md-app-content>
-    </md-app>
     <div class="footer">
       <router-link to="#">
         <span v-on:click="changeLocale('cs')">{{ $t("language.czech") }}</span>
