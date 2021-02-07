@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 let router = provideRouter()
 
 Vue.use(VueAnalytics, {
-  id: 'G-23R4NZE94Q',
+  id: 'G-E54D3NS9GH',
   router
 });
 
