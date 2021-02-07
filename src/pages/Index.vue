@@ -98,9 +98,14 @@
 </template>
 
 <script>
+import { page } from 'vue-analytics'
+
 export default {
   name: "Index",
   methods: {
+    track () {
+      page('/')
+    },
     onGithubClick() {
       window.open("https://github.com/rici4kubicek", "_blank");
     },

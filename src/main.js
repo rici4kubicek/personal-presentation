@@ -15,7 +15,10 @@ let router = provideRouter()
 
 Vue.use(VueAnalytics, {
   id: 'G-E54D3NS9GH',
-  router
+  router,
+  autoTracking: {
+    screenview: true
+  }
 });
 
 new Vue({
