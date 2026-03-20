@@ -94,6 +94,94 @@
         </md-card-content>
       </md-ripple>
     </md-card>
+
+    <h3>{{ $t("index.projects.header") }}</h3>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.projects.statistics.title") }}</div>
+        </md-card-header>
+
+        <md-card-content>
+          <div @click="onStatisticsLibraryClick()">
+            <p>
+              <img
+                alt="GitHub logo"
+                src="../assets/contact/github.png"
+                width="32px"
+              />
+            </p>
+            {{ $t("index.projects.statistics.description") }}
+          </div>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.projects.softwareTimer.title") }}</div>
+        </md-card-header>
+
+        <md-card-content>
+          <div @click="onSoftwareTimerLibraryClick()">
+            <p>
+              <img
+                alt="GitHub logo"
+                src="../assets/contact/github.png"
+                width="32px"
+              />
+            </p>
+            {{ $t("index.projects.softwareTimer.description") }}
+          </div>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.projects.superfaktura.title") }}</div>
+        </md-card-header>
+
+        <md-card-content>
+          <div @click="onSuperfakturaClientClick()">
+            <p>
+              <img
+                alt="GitHub logo"
+                src="../assets/contact/github.png"
+                width="32px"
+              />
+            </p>
+            {{ $t("index.projects.superfaktura.description") }}
+          </div>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
+
+    <h4>{{ $t("index.projects.contributionsHeader") }}</h4>
+
+    <md-card md-with-hover>
+      <md-ripple>
+        <md-card-header>
+          <div class="md-title">{{ $t("index.projects.hardpy.title") }}</div>
+        </md-card-header>
+
+        <md-card-content>
+          <div @click="onHardpyClick()">
+            <p>
+              <img
+                alt="GitHub logo"
+                src="../assets/contact/github.png"
+                width="32px"
+              />
+            </p>
+            {{ $t("index.projects.hardpy.description") }}
+          </div>
+        </md-card-content>
+      </md-ripple>
+    </md-card>
   </div>
 </template>
 
@@ -118,6 +206,24 @@ export default {
     onEmailClick() {
       window.open("mailto:rici.kubicek+web@gmail.com");
     },
+    onStatisticsLibraryClick() {
+      window.open(
+        "https://github.com/rici4kubicek?tab=repositories&q=statistics",
+        "_blank"
+      );
+    },
+    onSoftwareTimerLibraryClick() {
+      window.open(
+        "https://github.com/rici4kubicek?tab=repositories&q=software+timer",
+        "_blank"
+      );
+    },
+    onSuperfakturaClientClick() {
+      window.open("https://github.com/Eledio/superfaktura-client", "_blank");
+    },
+    onHardpyClick() {
+      window.open("https://github.com/everypinio/hardpy", "_blank");
+    },
   },
 };
 </script>
@@ -136,6 +242,9 @@ export default {
 }
 h3 {
   margin: 15px 0 0;
+}
+h4 {
+  margin: 10px 0 0;
 }
 ul {
   list-style-type: none;

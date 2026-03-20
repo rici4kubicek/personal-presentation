@@ -11,6 +11,16 @@
   "index.work.header": "Čemu se věnuji",
   "index.work.item1": "Programování embdeded v jazyce C",
   "index.work.item2": "Programování v jazyce Python",
+  "index.projects.header": "Moje práce",
+  "index.projects.statistics.title": "PlatformIO knihovna: Statistics",
+  "index.projects.statistics.description": "Znovupoužitelná statistická knihovna pro embedded projekty na PlatformIO.",
+  "index.projects.softwareTimer.title": "PlatformIO knihovna: Software Timer",
+  "index.projects.softwareTimer.description": "Knihovna softwarového časovače pro embedded systémy na PlatformIO.",
+  "index.projects.superfaktura.title": "Knihovna: Eledio/superfaktura-client",
+  "index.projects.superfaktura.description": "Klientská knihovna pro integraci API SuperFaktura.",
+  "index.projects.contributionsHeader": "Příspěvky",
+  "index.projects.hardpy.title": "Příspěvek: everypinio/hardpy",
+  "index.projects.hardpy.description": "Jen dílčí contribution (vybrané úpravy), nejde o moje hlavní autorské dílo.",
   "contact.meta.title": "Kontakty",
   "contact.title": "Kontakty"
 }

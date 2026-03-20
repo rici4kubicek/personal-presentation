@@ -11,6 +11,16 @@
   "index.work.header": "What I am doing",
   "index.work.item1": "Programming of embdeded in C",
   "index.work.item2": "Programming in Python",
+  "index.projects.header": "My Work",
+  "index.projects.statistics.title": "PlatformIO Library: Statistics",
+  "index.projects.statistics.description": "Reusable statistics library for embedded projects on PlatformIO.",
+  "index.projects.softwareTimer.title": "PlatformIO Library: Software Timer",
+  "index.projects.softwareTimer.description": "Software timer library for embedded systems on PlatformIO.",
+  "index.projects.superfaktura.title": "Library: Eledio/superfaktura-client",
+  "index.projects.superfaktura.description": "Client library for SuperFaktura API integration.",
+  "index.projects.contributionsHeader": "Contributions",
+  "index.projects.hardpy.title": "Contribution: everypinio/hardpy",
+  "index.projects.hardpy.description": "Partial contribution only (selected improvements), not my main authored project.",
   "contact.meta.title": "Contacts",
   "contact.title": "Contacts"
 }
