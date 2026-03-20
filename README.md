@@ -1,5 +1,8 @@
 # personal-presentation
 
+## Node.js version
+Use Node.js 22.x.
+
 ## Project setup
 ```
 npm install
