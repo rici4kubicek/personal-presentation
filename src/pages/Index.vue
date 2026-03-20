@@ -207,16 +207,10 @@ export default {
       window.open("mailto:rici.kubicek+web@gmail.com");
     },
     onStatisticsLibraryClick() {
-      window.open(
-        "https://github.com/rici4kubicek?tab=repositories&q=statistics",
-        "_blank"
-      );
+      window.open("https://github.com/rici4kubicek/statistics", "_blank");
     },
     onSoftwareTimerLibraryClick() {
-      window.open(
-        "https://github.com/rici4kubicek?tab=repositories&q=software+timer",
-        "_blank"
-      );
+      window.open("https://github.com/rici4kubicek/software-timer", "_blank");
     },
     onSuperfakturaClientClick() {
       window.open("https://github.com/Eledio/superfaktura-client", "_blank");
